@@ -123,16 +123,16 @@ templates/secret-password.yaml: yaml: did not find expected node content
 templates/secret-swarmkeys.yaml: yaml: did not find expected node content
 templates/statefulset.yaml: yaml: line 7: did not find expected node content
 encountered the following formatting errors:
-templates/tests/test-connection.yaml: yaml: did not find expected node content
-templates/service-swarm-proxy.yaml: yaml: did not find expected node content
 templates/ingress.yaml: yaml: did not find expected node content
 templates/ingress-swarm-proxy.yaml: yaml: did not find expected node content
+templates/tests/test-connection.yaml: yaml: did not find expected node content
+templates/service-swarm-proxy.yaml: yaml: did not find expected node content
 encountered the following formatting errors:
+templates/servicemonitor.yaml: yaml: did not find expected node content
+templates/service-headless.yaml: yaml: line 4: did not find expected key
 templates/serviceaccount.yaml: yaml: did not find expected node content
 templates/secret-libp2pkeys.yaml: yaml: did not find expected node content
 templates/ingress-gateway-proxy.yaml: yaml: did not find expected node content
-templates/servicemonitor.yaml: yaml: did not find expected node content
-templates/service-headless.yaml: yaml: line 4: did not find expected key
 
 shellcheck...........................................(no files to check)Skipped
 mdformat.................................................................Failed
