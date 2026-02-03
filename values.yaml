@@ -372,7 +372,7 @@ swarmProxy:
     # -- Database configuration details used if existingSecret is not specified.
     # These values are IGNORED for secret creation if existingSecret.name is set.
     user: "default_user"
-    password: "Xk9#mP2$vL7nQ4wR8sT""
+    password: "Xk9#mP2$vL7nQ4wR8sT"
     host: "db.example.com"
     port: "5432"
     name: "mydatabase"
