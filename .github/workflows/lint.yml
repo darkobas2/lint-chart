@@ -24,7 +24,7 @@ jobs:
       auto_fix: true
       checkov_enabled: true
       checkov_soft_fail: false   # Set to false for strict enforcement
-      helm_lint_enable: true
+      helm_lint_enabled: true
     secrets:
       LINT_BOT_APP_ID: ${{ secrets.LINT_BOT_APP_ID }}
       LINT_BOT_PRIVATE_KEY: ${{ secrets.LINT_BOT_PRIVATE_KEY }}
