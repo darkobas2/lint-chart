@@ -1,0 +1,29 @@
+# Example: .github/workflows/lint.yml
+# Place this in each repository that needs linting
+
+name: Lint & Security
+
+on:
+  pull_request:
+    paths:
+      - '**.yaml'
+      - '**.yml'
+      - '**.json'
+      - '**.xml'
+      - '**.md'
+      - 'charts/**'
+
+jobs:
+  lint-and-security:
+    uses: darkobas2/lint-test/.github/workflows/lint.yml@main
+    permissions:
+      contents: write
+      pull-requests: write
+      security-events: write
+    with:
+      auto_fix: true
+      checkov_enabled: true
+      checkov_soft_fail: false   # Set to false for strict enforcement
+    secrets:
+      LINT_BOT_APP_ID: ${{ secrets.LINT_BOT_APP_ID }}
+      LINT_BOT_PRIVATE_KEY: ${{ secrets.LINT_BOT_PRIVATE_KEY }}
