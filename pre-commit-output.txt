@@ -113,20 +113,20 @@ yamlfmt..................................................................Failed
 - files were modified by this hook
 
 encountered the following formatting errors:
+templates/config.yaml: yaml: line 7: did not find expected node content
 templates/service-p2p.yaml: yaml: did not find expected node content
 templates/service-api.yaml: yaml: did not find expected node content
 templates/secret-db-config.yaml: yaml: did not find expected node content
 templates/service-gateway-proxy.yaml: yaml: did not find expected node content
-templates/config.yaml: yaml: line 7: did not find expected node content
 encountered the following formatting errors:
+templates/secret-password.yaml: yaml: did not find expected node content
 templates/secret-swarmkeys.yaml: yaml: did not find expected node content
 templates/statefulset.yaml: yaml: line 7: did not find expected node content
-templates/secret-password.yaml: yaml: did not find expected node content
 encountered the following formatting errors:
+templates/service-swarm-proxy.yaml: yaml: did not find expected node content
 templates/ingress.yaml: yaml: did not find expected node content
 templates/ingress-swarm-proxy.yaml: yaml: did not find expected node content
 templates/tests/test-connection.yaml: yaml: did not find expected node content
-templates/service-swarm-proxy.yaml: yaml: did not find expected node content
 encountered the following formatting errors:
 templates/serviceaccount.yaml: yaml: did not find expected node content
 templates/secret-libp2pkeys.yaml: yaml: did not find expected node content
