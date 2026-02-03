@@ -225,8 +225,8 @@ libp2pSettings:
   enabled: false
   libp2pKeys:
     bee-0: '{"address":"6828fe67d8aed6065412dc374b601dce8aac40fe","crypto":{"cipher":"aes-128-ctr","ciphertext":"80fc86951b7c3ef77c1f44ffedade4312937e14673618bc87940bea2d8fe6b1d","cipherparams":{"iv":"58bf5af2fd6b7c796fbfdf853b5e22c1"},"kdf":"scrypt","kdfparams":{"n":32768,"r":8,"p":1,"dklen":32,"salt":"2bc758a178b3a43cb334436bc055cdad4898e1dacc9b9422b602254f29da08ed"},"mac":"c5616ee1343240181f4255a9072923dfc63be7f47ff8fb73519d53c31eb749ae"},"version":3}'
-  ## Use existing secret (ignores previous libp2pKeys)
-  # existingSecret:
+    ## Use existing secret (ignores previous libp2pKeys)
+    # existingSecret:
 ## If enabled, configures pods with defined swarm keys
 ## Swarm keys are pregenerated examples and can be replaced with other values
 ## Pods without specified key will autogenerate it during start
@@ -234,8 +234,8 @@ swarmSettings:
   enabled: false
   swarmKeys:
     bee-0: '{"address":"f176839c150e52fe30e5c2b5c648465c6fdfa532","crypto":{"cipher":"aes-128-ctr","ciphertext":"352af096f0fca9dfbd20a6861bde43d988efe7f179e0a9ffd812a285fdcd63b9","cipherparams":{"iv":"613003f1f1bf93430c92629da33f8828"},"kdf":"scrypt","kdfparams":{"n":32768,"r":8,"p":1,"dklen":32,"salt":"ad1d99a4c64c95c26131e079e8c8a82221d58bf66a7ceb767c33a4c376c564b8"},"mac":"cafda1bc8ca0ffc2b22eb69afd1cf5072fd09412243443be1b0c6832f57924b6"},"version":3}'
-  ## Use existing secret (ignores previous swarmKeys)
-  # existingSecret:
+    ## Use existing secret (ignores previous swarmKeys)
+    # existingSecret:
 ## If enabled it will start gateway-proxy sidecar container that will be publicly exposed
 ## It is used by gateway app
 gatewayProxy:
