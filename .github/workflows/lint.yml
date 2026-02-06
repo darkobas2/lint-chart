@@ -12,6 +12,7 @@ on:
       - '**.xml'
       - '**.md'
       - 'charts/**'
+      - 'templates/**'
 
 jobs:
   lint-and-security:
