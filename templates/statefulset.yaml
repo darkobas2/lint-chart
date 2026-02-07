@@ -251,7 +251,7 @@ spec:
               value: "0.0.0.0"
             - name: PORT
               value: "8633"
-            - name: BEE_API_URL 
+            - name: BEE_API_URL
               value: "http://localhost:1633"
           {{- with .Values.gatewayProxy.envs }}
             {{- toYaml . | nindent 12 }}
