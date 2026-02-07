@@ -27,8 +27,8 @@ This chart bootstraps a Bee node. It creates ConfigMap, Deployment and Service K
 
 ## Prerequisites
 
-* Kubernetes 1.15
-* Helm 3.0
+- Kubernetes 1.15
+- Helm 3.0
 
 ## Installing the Chart
 
@@ -92,9 +92,9 @@ $ helm install --name my-release -f values.yaml ethersphere/bee
 
 ### Prerequisites
 
-* Kubernetes 1.15
-* Helm 3.0
-* Helmsman 3.0
+- Kubernetes 1.15
+- Helm 3.0
+- Helmsman 3.0
 
 ### Installing
 
@@ -126,8 +126,9 @@ apps:
 ```
 
 Execute following command:
+
 ```bash
-$ helmsman -apply -f bee.yaml 
+$ helmsman -apply -f bee.yaml
 ```
 
 #### with first pod as a bootnode
@@ -159,13 +160,15 @@ apps:
 ```
 
 Execute following command:
+
 ```bash
-$ helmsman -apply -f bee.yaml 
+$ helmsman -apply -f bee.yaml
 ```
 
 ### Uninstalling
 
 Execute following command:
+
 ```bash
-$ helmsman -destroy -f bee.yaml 
+$ helmsman -destroy -f bee.yaml
 ```

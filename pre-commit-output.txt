@@ -1,0 +1,126 @@
+trim trailing whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing README.md
+Fixing templates/statefulset.yaml
+
+fix end of files.........................................................Passed
+check yaml...............................................................Failed
+- hook id: check-yaml
+- exit code: 1
+
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/ingress-gateway-proxy.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/ingress-swarm-proxy.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/secret-db-config.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/service-p2p.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/service-gateway-proxy.yaml", line 1, column 3
+while parsing a block mapping
+  in "templates/service-headless.yaml", line 5, column 3
+expected <block end>, but found '<scalar>'
+  in "templates/service-headless.yaml", line 5, column 39
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/service-api.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/secret-password.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/serviceaccount.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/secret-libp2pkeys.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/config.yaml", line 8, column 7
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/tests/test-connection.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/servicemonitor.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/secret-swarmkeys.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/ingress.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/service-swarm-proxy.yaml", line 1, column 3
+while parsing a flow node
+expected the node content, but found '-'
+  in "templates/statefulset.yaml", line 8, column 7
+
+check json...........................................(no files to check)Skipped
+pretty format json...................................(no files to check)Skipped
+check xml............................................(no files to check)Skipped
+check for merge conflicts................................................Passed
+check for added large files..............................................Passed
+mixed line ending........................................................Passed
+detect private key.......................................................Passed
+don't commit to branch...................................................Passed
+yamllint.................................................................Failed
+- hook id: yamllint
+- exit code: 1
+
+::group::values.yaml
+::warning file=values.yaml,line=33,col=3::33:3 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=75,col=5::75:5 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=95,col=3::95:3 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=174,col=3::174:3 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=254,col=3::254:3 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=264,col=3::264:3 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=287,col=7::287:7 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=312,col=5::312:5 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=339,col=7::339:7 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=364,col=5::364:5 [comments-indentation] comment not indented like content
+::warning file=values.yaml,line=380,col=7::380:7 [comments-indentation] comment not indented like content
+::endgroup::
+
+::group::templates/tests/test-connection.yaml
+::error file=templates/tests/test-connection.yaml,line=1,col=3::1:3 syntax error: expected the node content, but found '-' (syntax)
+::endgroup::
+
+yamlfmt..................................................................Failed
+- hook id: yamlfmt
+- exit code: 1
+
+encountered the following formatting errors:
+templates/service-p2p.yaml: yaml: did not find expected node content
+templates/service-gateway-proxy.yaml: yaml: did not find expected node content
+templates/ingress-gateway-proxy.yaml: yaml: did not find expected node content
+templates/ingress-swarm-proxy.yaml: yaml: did not find expected node content
+templates/secret-db-config.yaml: yaml: did not find expected node content
+encountered the following formatting errors:
+templates/serviceaccount.yaml: yaml: did not find expected node content
+templates/service-headless.yaml: yaml: line 4: did not find expected key
+templates/service-api.yaml: yaml: did not find expected node content
+templates/secret-password.yaml: yaml: did not find expected node content
+encountered the following formatting errors:
+templates/servicemonitor.yaml: yaml: did not find expected node content
+templates/secret-swarmkeys.yaml: yaml: did not find expected node content
+templates/secret-libp2pkeys.yaml: yaml: did not find expected node content
+templates/config.yaml: yaml: line 7: did not find expected node content
+templates/tests/test-connection.yaml: yaml: did not find expected node content
+encountered the following formatting errors:
+templates/ingress.yaml: yaml: did not find expected node content
+templates/service-swarm-proxy.yaml: yaml: did not find expected node content
+templates/statefulset.yaml: yaml: line 7: did not find expected node content
+
+shellcheck...........................................(no files to check)Skipped
+mdformat.................................................................Failed
+- hook id: mdformat
+- files were modified by this hook
