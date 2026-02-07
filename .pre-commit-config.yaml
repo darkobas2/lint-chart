@@ -1,0 +1,24 @@
+# shared-configs/.pre-commit-config.yaml
+#
+# Organization-wide pre-commit configuration
+# Hosted at: github.com/cybergrid-development/shared-configs
+#
+# Usage in repos:
+#   Option A: Copy this file to your repo
+#   Option B: Reference via workflow input:
+#     pre_commit_config_url: 'https://raw.githubusercontent.com/cybergrid-development/shared-configs/main/.pre-commit-config.yaml'
+
+repos:
+  # ============================================================
+  # Sync shared configs (always runs first)
+  # ============================================================
+  - repo: local
+    hooks:
+      - id: sync-shared-configs
+        name: Sync shared lint configs
+        entry: bash -c 'curl -sSfL https://raw.githubusercontent.com/darkobas2/lint-test/main/.yamllint -o .yamllint 2>/dev/null || true'
+        language: system
+        always_run: true
+        pass_filenames: false
+        stages: [pre-commit, manual]
+
