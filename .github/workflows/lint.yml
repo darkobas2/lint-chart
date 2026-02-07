@@ -25,6 +25,7 @@ jobs:
       auto_fix: true
       checkov_enabled: true
       checkov_soft_fail: false   # Set to false for strict enforcement
+      trivy_soft_fail: false   # Set to false for strict enforcement
     secrets:
       LINT_BOT_APP_ID: ${{ secrets.LINT_BOT_APP_ID }}
       LINT_BOT_PRIVATE_KEY: ${{ secrets.LINT_BOT_PRIVATE_KEY }}
