@@ -1,4 +1,3 @@
 probesEnable: false
-
 beeConfig:
   blockchain-rpc-endpoint: https://rpc.gnosischain.com/
